@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eure Fragen – Unsere Themen im Semester</title>
+  <style>
+    :root {
+      --green: #176b50;
+      --light: #eaf3ef;
+      --border: #d9e3df;
+      --text: #26342f;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: #f6f8f7;
+    }
+
+    main {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 24px 36px;
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    .eyebrow {
+      color: var(--green);
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      color: var(--green);
+      font-size: clamp(24px, 3vw, 38px);
+      margin: 10px 0;
+    }
+
+    .subtitle {
+      color: #5b6b64;
+      font-size: 16px;
+      margin: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      table-layout: fixed;
+      box-shadow: 0 2px 12px rgba(0,0,0,.05);
+    }
+
+    th {
+      background: var(--green);
+      color: white;
+      padding: 13px 16px;
+      text-align: left;
+      font-size: 17px;
+    }
+
+    th:first-child { width: 55%; }
+    th:last-child { width: 45%; }
+
+    td {
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: 16px;
+      line-height: 1.3;
+      vertical-align: middle;
+    }
+
+    tbody tr:nth-child(even) {
+      background: var(--light);
+    }
+
+    .topic {
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 18px;
+      color: var(--green);
+      font-size: 15px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    @media (max-width: 700px) {
+      main { padding: 16px; }
+      th, td { padding: 9px; font-size: 13px; }
+      h1 { font-size: 25px; }
+    }
+
+    @media print {
+      @page { size: A4 landscape; margin: 10mm; }
+      body { background: white; }
+      main { padding: 0; }
+      table { box-shadow: none; }
+      tr { break-inside: avoid; }
+      th { print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">
+      TU Chemnitz · Methodenlehre
+    </div>
+    <h1>Eure Fragen – Unsere Themen im Semester</h1>
+    <p class="subtitle">
+      Methodenlehre trifft Schlagzeilen
+    </p>
+  </header>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Eure Fragen</th>
+        <th>Themen der Methodenlehre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td></td><td class="topic">Einführung / Wissenschaftstheorie</td></tr>
+      <tr><td></td><td class="topic">Datenerhebungen</td></tr>
+      <tr><td></td><td class="topic">Versuchsplanung</td></tr>
+      <tr><td></td><td class="topic">Skalenniveaus &amp; Messtheorie</td></tr>
+      <tr><td></td><td class="topic">Lage- und Streuungsmaße</td></tr>
+      <tr><td></td><td class="topic">Korrelation</td></tr>
+      <tr><td></td><td class="topic">Einfache lineare Regression</td></tr>
+      <tr><td></td><td class="topic">Grundlagen der Inferenzstatistik</td></tr>
+      <tr><td></td><td class="topic">Konfidenzintervalle &amp; Stichprobenverteilung</td></tr>
+      <tr><td></td><td class="topic">Signifikanztests (Binomialtest &amp; t-Test)</td></tr>
+      <tr><td></td><td class="topic">Varianzanalyse (ANOVA)</td></tr>
+      <tr><td></td><td class="topic">Effektgrößen &amp; Metaanalyse</td></tr>
+      <tr><td></td><td class="topic">Qualitative Methoden</td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    Genau mit solchen Fragen beschäftigen wir uns
+    in diesem Semester.
+  </footer>
+</main>
+</body>
+</html>
